@@ -56,12 +56,6 @@ article{
     
     display : none;
 }
-article img{
-    width: 1200px;
-    height: 750px;
-    
-    float : right;
-}
 #ss_logo{
     border-top: 5px solid black;
     border-bottom : 5px solid black;

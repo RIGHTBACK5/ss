@@ -2,9 +2,26 @@ img{
     display : block;
     border : 0;
 }
+.slide_m img{
+    width: 1129px;
+    height: 750px;
+}
+.slide_h img{
+    width: 1200px;
+    height: 750px;
+    
+    float : right;
+}
 .slide_m{
     width : 1129px;
     margin : 0 auto;
+    overflow : hidden;
+    
+    float : right;
+}
+.slide_h{
+    width : 1200px;
+    margin-right : 150px;
     overflow : hidden;
     
     float : right;
@@ -14,20 +31,29 @@ img{
     list-style : none;
     font-size : 0px;
 }
+.slide_h ul{
+    width : 8400px; 
+    list-style : none;
+    font-size : 0px;
+}
 .slide_m ul li{
     display : inline-block;
 }
-.slide_m button.prev{
+.slide_h ul li{
+    display : inline-block;
+}
+
+.slide_h button.prev{
     position : absolute;
     left : 0;
     top : 120px;
+    width: 30px;
+    height: 60px;
 }
-.slide_m button.next{
+.slide_h button.next{
     position : absolute;
     right : 0px;
     top : 120px;
-}
-#main_wrap img{
-    width: 1129px;
-    height: 750px;
+    width: 30px;
+    height: 60px;
 }
