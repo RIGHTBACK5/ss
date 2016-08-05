@@ -5,7 +5,7 @@ $(function(){
         $("section").css("width","1600px");
         $("article").css("display","none");
         $("#main_wrap").css("display","block");
-        $("#b-img").css("width","0%");
+        $("#b-img").css("display","none");
     });
             
     $(".hangang").click(function(){
@@ -14,7 +14,7 @@ $(function(){
         $("section").css("width","1800px");
         $("#main_wrap").css("display","none");
         $("article").css("display","inline-block");
-        $("#b-img").css("width","0%");
+        $("#b-img").css("display","none");
     });
     
     $(".ss").click(function(){
@@ -24,7 +24,6 @@ $(function(){
         $("article").css("display","none");
         $("#main_wrap").css("display","none");
         $("#b-img").css("display","block");
-        $("#b-img").css("width","100%");
     });
     
     var current_m = 0;
@@ -83,11 +82,11 @@ $(function(){
     
     function animate_m(){
         var moveX = current_m * 1129;
-        TweenMax.to(container_m, 0.5, {marginLeft : -moveX, ease:Expo.easeOut}); 
+        TweenMax.to(container_m, 0.1, {marginLeft : -moveX, ease:Expo.easeOut}); 
     }
     function animate_h(){
         var moveX = current_h * 1200;
-        TweenMax.to(container_h, 0.5, {marginLeft : -moveX, ease:Expo.easeOut}); 
+        TweenMax.to(container_h, 0.1, {marginLeft : -moveX, ease:Expo.easeOut}); 
     }
     
     $(document).ready( init );
