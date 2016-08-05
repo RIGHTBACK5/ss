@@ -1,5 +1,5 @@
 #sidebar{
-    width: 20px;
+    width: 50px;
     height: 750px;
     background-color: forestgreen;
     
@@ -7,7 +7,7 @@
     
     font-size : 30px;
     
-    transition : 0.5s;
+    transition : 1s;
 }
 #sidebar:hover{
     width: 300px;

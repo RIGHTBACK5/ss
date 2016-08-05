@@ -1,5 +1,5 @@
 $(function(){
-    $(".home").click(function(){
+        $(".home").click(function(){
         $("body").css("background","#5F5F5F");
         $("section").css("height","750px");
         $("section").css("width","1600px");
@@ -32,7 +32,7 @@ $(function(){
     var container;
 
     function init(){
-        container = $(".slide ul");
+        container = $(".slide_m ul");
         max = container.children().length;
 
         events();
@@ -46,15 +46,20 @@ $(function(){
     function prev(e){
         current--;
         if(current < 0) current = max-1;
-        animate();
+        animate_m();
     }
     function next(e){
-            current++;
-            if(current > max-1) current = 0;
-            animate();
-        }
-    function animate(){
+        current++;
+        if(current > max-1) current = 0;
+        animate_m();
+    }
+    
+    function animate_m(){
         var moveX = current * 1129;
+        TweenMax.to(container, 0.5, {marginLeft : -moveX, ease:Expo.easeOut}); 
+    }
+    function animate_h(){
+        var moveX = current * 1200;
         TweenMax.to(container, 0.5, {marginLeft : -moveX, ease:Expo.easeOut}); 
     }
     

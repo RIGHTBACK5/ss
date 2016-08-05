@@ -2,32 +2,32 @@ img{
     display : block;
     border : 0;
 }
-.slide{
+.slide_m{
     width : 1129px;
     margin : 0 auto;
     overflow : hidden;
     
     float : right;
 }
-.slide ul{
+.slide_m ul{
     width : 7903px; 
     list-style : none;
     font-size : 0px;
 }
-.slide ul li{
+.slide_m ul li{
     display : inline-block;
 }
-.slide button.prev{
+.slide_m button.prev{
     position : absolute;
     left : 0;
     top : 120px;
 }
-.slide button.next{
+.slide_m button.next{
     position : absolute;
     right : 0px;
     top : 120px;
 }
-.slide>ul>li>img{
+#main_wrap img{
     width: 1129px;
     height: 750px;
 }
