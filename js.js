@@ -5,7 +5,7 @@ $(function(){
         $("section").css("width","1600px");
         $("article").css("display","none");
         $("#main_wrap").css("display","block");
-        $("#b-img").css("display","none");
+        $("#b-img").css("opacity","0");
     });
             
     $(".hangang").click(function(){
@@ -14,7 +14,7 @@ $(function(){
         $("section").css("width","1800px");
         $("#main_wrap").css("display","none");
         $("article").css("display","inline-block");
-        $("#b-img").css("display","none");
+        $("#b-img").css("opacity","0");
     });
     
     $(".ss").click(function(){
@@ -23,7 +23,7 @@ $(function(){
         $("section").css("width","1500px");
         $("article").css("display","none");
         $("#main_wrap").css("display","none");
-        $("#b-img").css("display","block");
+        $("#b-img").css("opacity","100");
     });
     
     var current_m = 0;
