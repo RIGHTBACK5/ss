@@ -39,7 +39,7 @@ nav li {
             
     font-size : 20px;
 }
-nav li:after {content : "|"; margin : 30px; color : black}
+nav li:after {content : ""; margin : 30px; color : black}
 nav li:last-child:after {content : none;}
         
 section{

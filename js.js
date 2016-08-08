@@ -27,56 +27,66 @@ $(function(){
     });
     
     var current_m = 0;
-    var current_h = 0;
+    var currentX = 0;
+    var currentY = 0;
     var max_m = 0;
-    var max_h = 0;
+    var maxX = 7;
+    var maxY = 3;
     var container_m;
     var container_h;
 
     function init(){
-        container_m = $(".slide_m ul");
-        container_h = $(".slide_h ul");
+        container_m = $(".slide_m>ul");
+        container_h = $(".slide_h>ul");
         
         max_m = container_m.children().length;
-        max_h = container_h.children().length;
         
         events();
         setInterval(next_m, 5000);
     }
     function events(){
-        $("button.prev").on("click", prev_h);
-        $("button.next").on("click", next_h);
-        
         $(window).on("keydown",keydown);
     }
     
-    function prev_m(e){
-        current_m--;
-        if(current_m < 0) current_m = max_m-1;
-        animate_m();
-    }    
-    function prev_h(e){
-        current_h--;
-        if(current_h < 0) current_h = max_h-1;
-        animate_h();
-    }
     function next_m(e){
         current_m++;
         if(current_m > max_m-1) current_m = 0;
         animate_m();
+    } 
+    
+    function prev(e){
+        currentX--;
+        if(currentX < 0) currentX = maxX-1;
+        animate_h(1);
+    }
+    function next(e){
+        currentX++;
+        if(currentX > maxX-1) currentX = 0;
+        animate_h(1);
     }    
-    function next_h(e){
-        current_h++;
-        if(current_h > max_h-1) current_h = 0;
-        animate_h();
+    function up(e){
+        currentY--;
+        if(currentY < 0) currentY = maxY-1;
+        animate_h(2);
+    }
+    function down(e){
+        currentY++;
+        if(currentY > maxY-1) currentY = 0;
+        animate_h(2);
     }
     
     function keydown(e){
-        if(e.which == 39){
-            next_h();
+        if(e.which == 37){
+            prev();
         }
-        else if(e.which == 37){
-            prev_h();
+        else if(e.which == 39){
+            next();
+        }
+        else if(e.which == 38){
+            up();
+        }
+        else if(e.which == 40){
+            down();
         }
     }
     
@@ -84,9 +94,15 @@ $(function(){
         var moveX = current_m * 1129;
         TweenMax.to(container_m, 0.1, {marginLeft : -moveX, ease:Expo.easeOut}); 
     }
-    function animate_h(){
-        var moveX = current_h * 1200;
-        TweenMax.to(container_h, 0.1, {marginLeft : -moveX, ease:Expo.easeOut}); 
+    function animate_h(s){
+        var moveX = currentX * 1200;
+        var moveY = currentY * 750;
+        if(s==1){
+            TweenMax.to(container_h, 0.1, {marginLeft : -moveX, ease:Expo.easeOut});
+        }
+        else{
+            TweenMax.to(container_h, 0.1, {marginTop : -moveY, ease:Expo.easeOut});
+        }
     }
     
     $(document).ready( init );
