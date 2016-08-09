@@ -18,12 +18,19 @@ $(function(){
     });
     
     $(".ss").click(function(){
-        $("body").css("display","block");
         $("section").css("height","750px");
         $("section").css("width","1500px");
         $("article").css("display","none");
         $("#main_wrap").css("display","none");
         $("#b-img").css("opacity","100");
+    });
+    $(".au").click(function(){
+        $("body").css("background","#E1E18C");
+        $("section").css("height","750px");
+        $("section").css("width","1500px");
+        $("article").css("display","none");
+        $("#main_wrap").css("display","none");
+        $("#b-img").css("opacity","0");
     });
     
     var current_m = 0;
@@ -92,7 +99,7 @@ $(function(){
     
     function animate_m(){
         var moveX = current_m * 1129;
-        TweenMax.to(container_m, 0.1, {marginLeft : -moveX, ease:Expo.easeOut}); 
+        TweenMax.to(container_m, 0, {marginLeft : -moveX, ease:Expo.easeOut}); 
     }
     function animate_h(s){
         var moveX = currentX * 1200;

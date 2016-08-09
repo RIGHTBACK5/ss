@@ -4,6 +4,7 @@ body{
     background-color: #5F5F5F;
     margin-bottom : 40px;
     overflow-y : hidden;
+    transition : 2s;
 }
 #b-img{
     width: 100%;
@@ -12,6 +13,8 @@ body{
     z-index : -10;
     float : right;
     opacity : 0;
+    
+    transition : 2s;
 }
 Header{
     width: 1600px;
@@ -52,6 +55,33 @@ section{
     margin-top : 10px;
             
     color : #281277;
+    
+    transition : 2s;
+}
+#main_section{
+    width: 471px;
+    height: 750px;
+    display : inline-block;
+    float : left;
+}
+#sBox_wrap{
+    float : right;
+    margin-top : 90px;
+    
+    list-style : none;
+}
+.sBox{
+    width: 25px;
+    height: 25px;
+    background-color: #BCBCBC;
+    
+    margin : 20px;
+    margin-top : 50px;
+    
+    cursor : pointer;
+}
+#sBox_wrap >li:first-child{
+    background-color: #505050;
 }
 article{
     width: 100%;
@@ -73,8 +103,6 @@ article{
     font-family : fantasy;
     font-size : 60px;
     color : #281277;
-    
-    transition : 2s;
 }
 .home, .hangang, .ss, .au{
     cursor : pointer;

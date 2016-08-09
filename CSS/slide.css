@@ -16,7 +16,7 @@ img{
     width : 1129px;
     margin : 0 auto;
     overflow : hidden;
-    
+    display : inline-block;
     float : right;
 }
 .slide_h{
@@ -30,12 +30,14 @@ img{
     width : 7903px; 
     list-style : none;
     font-size : 0px;
+    transition : 2s;
 }
 .slide_h ul{
     width : 8400px;
     height: 750px;
     list-style : none;
     font-size : 0px;
+    transition : 2s;
 }
 .slide_m ul li{
     display : inline-block;
