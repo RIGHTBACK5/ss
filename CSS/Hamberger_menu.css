@@ -1,0 +1,76 @@
+*{transition : 2s;}
+#h_menu{
+    width: 200px;
+    height: 400px;
+    
+    margin-left : 128px;
+    margin-top : 50px;
+    float : left;
+    position : absolute;
+}
+
+ #ff {
+     width: 200px; 
+     background-color:#909090;
+     
+     margin: 0 auto;
+}
+
+.burger-input {
+    width: 200px;
+    height: 0px;
+    opacity : 0;
+    
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+    cursor: pointer;
+}
+.burger-input + label {
+    width: 30px;
+    
+    margin: 3px auto;
+    padding: 5px;
+    display: block;
+    position: relative;
+    
+    cursor:pointer;
+}
+.burger-input + label:after, .burger-input + label:before,.burger-input + label .burger 
+{
+    content: '';
+    width: 25px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+    display: block;  
+    margin: 5px auto;
+    
+    transition: .3s linear;
+}
+.burger-input:checked + label {top: 4px;}
+.burger-input:checked + label:before {transform: translateY(7px) rotate(135deg);}
+.burger-input:checked + label:after {transform: translateY(-10px) rotate(-135deg);}
+.burger-input:checked + label .burger {transform: scale(0);}
+.burger-input:checked ~ #dd {display: block;}
+.burger-input:checked ~ #dd li {display: block; text-align: center;}
+
+#dd {display: none;}
+
+#ff ul {
+    list-style: none; 
+    text-align: center;
+    
+    transition : 1s;
+}
+#ff li {
+    display: block; 
+    padding: 10px 0; 
+    color: #ffffff; 
+    background: #CDCDCD;
+}
+#ff ul a:hover {
+    background-color: #7691dd;
+}

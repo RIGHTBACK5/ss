@@ -1,0 +1,14 @@
+#sidebar{
+    width: 50px;
+    height: 750px;
+    background-color: forestgreen;
+    
+    float : left;
+    
+    font-size : 30px;
+    
+    transition : 1s;
+}
+#sidebar:hover{
+    width: 300px;
+}
