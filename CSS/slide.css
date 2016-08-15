@@ -17,6 +17,7 @@ img{
     margin : 0 auto;
     overflow : hidden;
     display : inline-block;
+    position : absolute;
     float : right;
 }
 .slide_h{
