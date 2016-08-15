@@ -69,21 +69,42 @@ function next_m(e){
 function prev(e){
     currentX--;
     if(currentX < 0) currentX = 0;
+    else{
+        $("#point").animate({
+            left : "-=42.5px"
+        },200);
+    }
+    
     animate_h(1);
 }
 function next(e){
     currentX++;
     if(currentX > maxX-1) currentX = maxX-1;
+    else{
+        $("#point").animate({
+            left : "+=42.5px"
+        },200);
+    }
     animate_h(1);
 }    
 function up(e){
     currentY--;
     if(currentY < 0) currentY = 0;
+    else{
+        $("#point").animate({
+            top : "-=62.5px"
+        },200);
+    }
     animate_h(2);
 }
 function down(e){
     currentY++;
     if(currentY > maxY-1) currentY = maxY-1;
+    else{
+        $("#point").animate({
+            top : "+=62.5px"
+        },200);
+    }
     animate_h(2);
 }
 

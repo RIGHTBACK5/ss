@@ -46,3 +46,13 @@ img{
 .slide_h ul li{
     display : inline-block;
 }
+
+#point{
+    width: 85px;
+    height: 125px;
+    border : 2px solid red;
+    
+    position : absolute;
+    top : 368px;
+    left : 57px;
+}
