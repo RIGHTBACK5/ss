@@ -80,7 +80,7 @@ section{
     
     cursor : pointer;
 }
-#sBox_wrap >li:first-child{
+.np{
     background-color: #505050;
 }
 article{
@@ -103,6 +103,9 @@ article{
     font-family : fantasy;
     font-size : 60px;
     color : #281277;
+}
+#ss_wrap{
+    display : none;
 }
 .home, .hangang, .ss, .au{
     cursor : pointer;
