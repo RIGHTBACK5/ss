@@ -28,7 +28,7 @@ $(function(){
         $("#ss_wrap").css("display","block");
     });
     $(".au").click(function(){
-        $("body").css("background","#E6E3AB");
+        $("body").css("background","#BCBA9B");
         $("section").css("height","750px");
         $("section").css("width","1500px");
         $("article").css("display","none");
