@@ -1,0 +1,55 @@
+.bi{
+    position : relative;
+}
+.bi div{
+    width: 70px;
+    height: 70px;
+    background-color: #3FAE7C;
+    opacity: 20%;
+    border : 10px solid #CBEADC;
+    border-radius: 50%;
+    position : absolute;
+    z-index: 999;
+}
+#gimpo{
+    top : 300px;
+    left : 620px;
+}
+#hengju{
+    top : 440px;
+    left : 940px;
+}
+#banghwa{
+    top : 530px;
+    left : 1250px;
+}
+#gayang{
+    top : 730px;
+    left : 1800px;
+}
+#sungsan{
+    top : 185px;
+    left : 2330px;
+}
+#yanghwa{
+    top : 270px;
+    left : 2550px;
+}
+#sugang{
+    top : 330px;
+    left: 2910px;
+}
+#mapo{
+    top : 370px;
+    left : 3100px;
+}
+#onehyo{
+    top : 440px;
+    left : 3250px;
+}
+#hangang_b{
+    
+}
+#dongjak{
+    
+}

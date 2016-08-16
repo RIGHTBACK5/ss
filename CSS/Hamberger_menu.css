@@ -8,7 +8,7 @@
     position : absolute;
 }
 
- #ff {
+ #hMain {
      width: 200px; 
      background-color:#909090;
      
@@ -56,20 +56,20 @@
 .burger-input:checked ~ #dd {display: block;}
 .burger-input:checked ~ #dd li {display: block; text-align: center;}
 
-#dd {display: none;}
+#hSub {display: none;}
 
-#ff ul {
+#hMain ul {
     list-style: none; 
     text-align: center;
     
     transition : 1s;
 }
-#ff li {
+#hMain li {
     display: block; 
     padding: 10px 0; 
     color: #ffffff; 
     background: #CDCDCD;
 }
-#ff ul a:hover {
+#hMain ul a:hover {
     background-color: #7691dd;
 }

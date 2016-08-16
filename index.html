@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <title>메인페이지</title>
@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="/CSS/slide.css">
     <link rel="stylesheet" href="/CSS/sidebar.css">
     <link rel="stylesheet" href="/CSS/Hamberger_menu.css">
+    <link rel="stylesheet" href="/CSS/bridge.css">
     <script src="/JS/jquery-3.1.0.js"></script>
     <script src="JS/TweenMax.min.js"></script>
     <script src="/JS/slide.js"></script>
+    <style>
+        #hh{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position : absolute;
+            z-index : 999;
+            transition : .5s;
+            left : 640px;
+            top : 300px;
+        }
+    </style>
 </head>
 <body>
     <!--<iframe src="https://www.youtube.com/embed/65ktw42kam0?&amp;autoplay=1&amp;loop=1 frameborder=" frameborder="0" allowfullscreen style="display : none"></iframe> 착한 브금--> 
@@ -30,12 +43,12 @@
             <div id="main_section">
                 <div id="ss_logo">SMART<br>SPACE</div>
                 <div id="h_menu">
-                    <div id="ff">
+                    <div id="hMain">
                         <input type="checkbox" id="click" class="burger-input">
                         <label for="click">
                             <div class="burger"></div>
                         </label>
-                        <div id="dd">
+                        <div id="hSub">
                             <ul>
                                 <li class="home">HOME</li>
                                 <li class="hangang">HANGANG</li>
@@ -68,45 +81,55 @@
             </div>
         </div>
         <article>
-           <img src="/이미지/map.png" alt="" style="width : 595px; height : 375px; float : left; margin-top : 200px; position : absolute">
+           <img src="/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%A1%B0%EA%B0%81/map.png" alt="" style="width : 595px; height : 375px; float : left; margin-top : 200px; position : absolute">
            <div id="point"></div>
             <div class="slide_h">
-               <ul><li><img src="/이미지/map.png" alt="" style="width : 8400px; height : 2250px;">
-                        <!--<ul>
-                            <li>
-                                <ul>
-                                    <li><img src="/이미지/니코마키1.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키2.png" alt=""></li>
-                                    <li><img src="/이미지/니코마키3.png" alt=""></li>
-                                    <li><img src="/이미지/니코마키4.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키5.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키6.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키7.jpg" alt=""></li>
-                                </ul>
-                            </li>            
-                            <li>
-                                <ul>
-                                    <li><img src="/이미지/니코마키1.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키2.png" alt=""></li>
-                                    <li><img src="/이미지/니코마키3.png" alt=""></li>
-                                    <li><img src="/이미지/니코마키4.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키5.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키6.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키7.jpg" alt=""></li>
-                                </ul>
-                            </li>            
-                            <li>
-                                <ul>
-                                    <li><img src="/이미지/니코마키1.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키2.png" alt=""></li>
-                                    <li><img src="/이미지/니코마키3.png" alt=""></li>
-                                    <li><img src="/이미지/니코마키4.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키5.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키6.jpg" alt=""></li>
-                                    <li><img src="/이미지/니코마키7.jpg" alt=""></li>
-                                </ul>
-                            </li>
-                        </ul>--></li></ul>
+               <ul>
+                   <ul>
+                       <li>
+                           <ul class="bi">
+                                <div id="gimpo">김포대교</div>
+                                <div id="hengju">행주대교</div> 
+                                <div id="banghwa">방화대교</div>
+                                <div id="gayang">가양대교</div>   
+                                <li><img src="/이미지/조각/Map_001.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_002.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_003.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_004.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_005.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_006.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_007.jpg" alt=""></li>
+                            </ul>
+                        </li>            
+                        <li>
+                            <ul class="bi">
+                                <div id="sungsan">성산대교</div>
+                                <div id="yanghwa">양화대교</div>
+                                <div id="sugang">서강대교</div>
+                                <div id="mapo">마포대교</div>
+                                <div id="onehyo">원효대교</div>
+                                <li><img src="/이미지/조각/Map_008.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_009.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_010.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_011.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_012.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_013.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_014.jpg" alt=""></li>
+                            </ul>
+                        </li>            
+                        <li>
+                            <ul class="bi">
+                                <li><img src="/이미지/조각/Map_015.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_016.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_017.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_018.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_019.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_020.jpg" alt=""></li>
+                                <li><img src="/이미지/조각/Map_021.jpg" alt=""></li>
+                            </ul>
+                        </li>
+                   </ul>
+                </ul>
             </div>
         </article>
         <div id="ss_wrap">
