@@ -4,6 +4,7 @@ body{
     background-color: #5F5F5F;
     margin-bottom : 40px;
     transition : 2s;
+    overflow-y: hidden;
 }
 #b-img{
     width: 100%;
@@ -52,6 +53,7 @@ section{
             
     margin : 0 auto;
     margin-top : 10px;
+    margin-bottom : 0;
             
     color : #281277;
     

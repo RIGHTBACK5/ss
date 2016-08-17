@@ -66,6 +66,36 @@ img{
 .np{
     background-color: #505050;
 }
+.limocon{
+    list-style : none;
+    width : 150px;
+    height: 50px;
+    background-color: white;
+    
+    float : left;
+    transition : 1s;
+    
+    line-height : 50px;
+    text-align : center;
+}
+.limocon:hover{
+    height: 200px;
+}
+.limocon >li{
+    width : 150px;
+    height: 50px;
+    background-color: greenyellow;
+    
+    float : left;
+    overflow : hidden;
+    transition : 1s;
+    
+    text-align : center;
+    line-height : 50px;
+}
+.limocon >li:hover{
+    width: 300px;
+}
 #miniMap{
     width : 598px; 
     height : 375px;
@@ -89,31 +119,35 @@ img{
 .button{
     list-style : none;
     width: 150px;
-    height : 150px;
+    height : 200px;
+    border : 3px solid black;
     
-    margin-left : 220px;
+    margin-top : 160px;
+    margin-left : 430px;
     
-    background-color: white;
     position : absolute;
+    
+    text-align : center;
+    font-size : 30px;
+    color : black;
 }
 .button img{
     width: 40px;
     height: 40px;
     position  :absolute;
-    margin : 0 auto;
     cursor : pointer;
 }
 .upb{
-    margin-left : 58px;
+    margin-left : 55px;
 }
 .downb{
     margin-top : 110px; 
     margin-left : 55px;
 }
 .rightb{
-    margin-top : -50px; 
+    margin-top : -55px; 
     margin-left : 110px;
 }
 .leftb{
-    margin-top : -50px;
+    margin-top : -55px;
 }

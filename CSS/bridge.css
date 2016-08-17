@@ -3,12 +3,12 @@
 }
 .bi div{
     display : inline-block;
-    width: 100px;
-    height: 100px;
-    background-color: #3FAE7C;
-    opacity: 20%;
-    border : 10px solid #CBEADC;
-    border-radius: 50%;
+    width: 10px;
+    height: 170px;
+    background-color: black;
+    /*background-color: #3FAE7C;*/
+    /*border : 10px solid #CBEADC;*/
+    /*border-radius: 50%;*/
     position : absolute;
     z-index: 999;
     transition : 0.5s;
@@ -24,64 +24,88 @@
 }
 /*https://www.google.com/maps/d/viewer?mid=1PLAZ4RLNT1NMUgY_owwQ11wy2mI&hl=en_US 다리 출처*/
 #gimpo{
-    top : 300px;
-    left : 620px;
+    height: 200px;
+    top : 290px;
+    left : 660px;
+    transform: rotate(54deg);
 }
 #hengju{
-    top : 440px;
-    left : 940px;
+    top : 430px;
+    left : 960px;
+    transform: rotate(54deg);
 }
 #banghwa{
     top : 530px;
     left : 1250px;
+    transform: rotate(54deg);
 }
 #gayang{
-    top : 730px;
-    left : 1800px;
+    top : 720px;
+    left : 1830px;
+    transform: rotate(49deg);
 }
 #sungsan{
-    top : 185px;
-    left : 2330px;
+    top : 150px;
+    left : 2360px;
+    transform: rotate(42deg);
 }
 #yanghwa{
-    top : 270px;
-    left : 2550px;
+    top : 240px;
+    left : 2580px;
+    transform: rotate(60deg);
 }
 #sugang{
-    top : 330px;
-    left: 2910px;
+    top : 290px;
+    left: 2960px;
+    transform: rotate(48deg);
 }
 #mapo{
-    top : 370px;
-    left : 3100px;
+    height: 240px;
+    top : 300px;
+    left : 3140px;
+    transform: rotate(69deg);
 }
 #onehyo{
-    top : 440px;
-    left : 3250px;
+    height: 240px;
+    top : 380px;
+    left : 3280px;
+    transform: rotate(72deg);
 }
 #hangang_b{
+    height: 100px;
     top : 525px;
-    left : 3500px;
+    left : 3530px;
+    transform: rotate(48deg);
 }
 #dongjak{
+    height: 100px;
     top : 610px;
-    left : 3880px;
+    left : 3920px;
+    transform: rotate(20deg);
 }
 #banpo_jamsu{
+    height: 100px;
     top : 570px;
-    left : 4130px;
+    left : 4180px;
+    transform: rotate(-36deg);
 }
 #hanam{
-    top : 450px;
-    left : 4400px;
+    height: 100px;
+    top : 440px;
+    left : 4460px;
+    transform: rotate(-56deg);
 }
 #dongho{
+    height: 100px;
     top : 345px;
-    left : 4570px;
+    left : 4600px;
+    transform: rotate(-50deg);
 }
 #sungsu{
-    top : 330px;
-    left : 4800px;
+    height: 80px;
+    top : 340px;
+    left : 4840px;
+    transform: rotate(15deg);
 }
 #yungdong{
     top : 410px;
