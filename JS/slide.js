@@ -12,7 +12,7 @@ $(function(){
             
     $(".hangang").click(function(){
         $("body").css("background","#8DD4E4");
-        $("section").css("height","750px");
+        $("section").css("height","1600px");
         $("section").css("width","1800px");
         $("#main_wrap").css("display","none");
         $("article").css("display","inline-block");

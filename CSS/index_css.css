@@ -3,7 +3,6 @@
 body{
     background-color: #5F5F5F;
     margin-bottom : 40px;
-    overflow-y : hidden;
     transition : 2s;
 }
 #b-img{
