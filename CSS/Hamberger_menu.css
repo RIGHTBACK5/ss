@@ -1,4 +1,4 @@
-#hmenu {
+.hmenu {
     background-color: #B5B5B5;
     width : 200px;
     margin-left : 130px;
@@ -53,27 +53,27 @@
 .burger-input:checked + label .burger {
   -webkit-transform: scale(0);
 }
-.burger-input:checked ~ #hmain {
+.burger-input:checked ~ .hmain {
   height: 200px;
 }
-.burger-input:checked ~ #hmain li {
+.burger-input:checked ~ .hmain li {
     height: 30px;
     text-align: center;
 }
-#hmain{
+.hmain{
     height : 0px;
     overflow : hidden;
     transition : 0.5s;
 }
 
-#hsub {
+.hsub {
   margin: 0;
   padding: 0;
   width: 200px;
   list-style: none;
   text-align: center;
 }
-#hsub li{
+.hsub li{
   display: block;
   padding: 10px 0;
   color: #ffffff;

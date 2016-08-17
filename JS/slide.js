@@ -58,7 +58,8 @@ function init(){
     max_m = container_m.children().length;
     events();
     button();
-    setInterval(next_m, 5000);
+    sbs();
+    slider = setInterval(next_m, 5000);
 }
 function events(){
     $(window).on("keydown",keydown);
@@ -68,6 +69,55 @@ function button(){
     $(".downb").on("click",down);
     $(".rightb").on("click",next);
     $(".leftb").on("click",prev);
+}
+function sbs(){
+    $("#b1").on("click",function(){
+        clearInterval(slider);
+        current_m = 0;
+        animate_m();
+        slider = setInterval(next_m, 5000);
+    });
+    $("#b2").on("click",function(){
+        clearInterval(slider);
+        clearInterval();
+        current_m = 1;
+        animate_m();
+        slider = setInterval(next_m, 5000);
+    });
+    $("#b3").on("click",function(){
+        clearInterval(slider);
+        clearInterval();
+        current_m = 2;
+        animate_m();
+        slider = setInterval(next_m, 5000);
+    });
+    $("#b4").on("click",function(){
+        clearInterval(slider);
+        clearInterval();
+        current_m = 3;
+        animate_m();
+        slider = setInterval(next_m, 5000);
+    });
+    $("#b5").on("click",function(){
+        clearInterval(slider);
+        clearInterval();
+        current_m = 4;
+        animate_m();
+        slider = setInterval(next_m, 5000);
+    });
+    $("#b6").on("click",function(){
+        clearInterval(slider);
+        clearInterval();
+        current_m = 5;
+        animate_m();
+        slider = setInterval(next_m, 5000);
+    });
+    $("#b7").on("click",function(){
+        clearInterval(slider);
+        clearInterval();
+        current_m = 6;
+        animate_m();
+    }); 
 }
 function next_m(e){
     current_m++;
