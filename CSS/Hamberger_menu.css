@@ -1,4 +1,4 @@
-#h_menu{
+.h_menu{
     width: 200px;
     height: 400px;
     
@@ -8,7 +8,7 @@
     position : absolute;
 }
 
- #hMain {
+.hMain {
      width: 200px; 
      background-color:#909090;
      
@@ -53,23 +53,23 @@
 .burger-input:checked + label:before {transform: translateY(7px) rotate(135deg);}
 .burger-input:checked + label:after {transform: translateY(-10px) rotate(-135deg);}
 .burger-input:checked + label .burger {transform: scale(0);}
-.burger-input:checked ~ #dd {display: block;}
-.burger-input:checked ~ #dd li {display: block; text-align: center;}
+.burger-input:checked ~ .hMain {display: block;}
+.burger-input:checked ~ .hMain li {display: block; text-align: center;}
 
-#hSub {display: none;}
+.hSub {display: none;}
 
-#hMain ul {
+.hMain ul {
     list-style: none; 
     text-align: center;
     
     transition : 1s;
 }
-#hMain li {
+.hMain li {
     display: block; 
     padding: 10px 0; 
     color: #ffffff; 
     background: #CDCDCD;
 }
-#hMain ul a:hover {
+.hMain ul a:hover {
     background-color: #7691dd;
 }

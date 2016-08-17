@@ -11,22 +11,10 @@
     <script src="/JS/jquery-3.1.0.js"></script>
     <script src="JS/TweenMax.min.js"></script>
     <script src="/JS/slide.js"></script>
-    <style>
-        #hh{
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position : absolute;
-            z-index : 999;
-            transition : .5s;
-            left : 640px;
-            top : 300px;
-        }
-    </style>
 </head>
 <body>
     <!--<iframe src="https://www.youtube.com/embed/65ktw42kam0?&amp;autoplay=1&amp;loop=1 frameborder=" frameborder="0" allowfullscreen style="display : none"></iframe> 착한 브금--> 
-    <img id="b-img" src="/이미지/스스 바탕.jpg" alt="">
+    <img id="b-img" src="/img/스스 바탕.jpg" alt="">
     <header>
        <span class="home">PROJECT : HANGANG</span>
        <nav>
@@ -41,14 +29,14 @@
     <section>
         <div id="main_wrap">
             <div id="main_section">
-                <div id="ss_logo">SMART<br>SPACE</div>
-                <div id="h_menu">
-                    <div id="hMain">
-                        <input type="checkbox" id="click" class="burger-input">
+                <div class="ss_logo">SMART<br>SPACE</div>
+                <div class="h_menu">
+                    <div class="hMain">
+                        <input type="checkbox" class="click" class="burger-input">
                         <label for="click">
                             <div class="burger"></div>
                         </label>
-                        <div id="hSub">
+                        <div class="hSub">
                             <ul>
                                 <li class="home">HOME</li>
                                 <li class="hangang">HANGANG</li>
@@ -70,19 +58,33 @@
             </div>
             <div class="slide_m">
                 <ul>
-                    <li><img src="/이미지/메인이미지1.jpg" alt=""></li>
-                    <li><img src="/이미지/메인이미지2.jpg" alt=""></li>
-                    <li><img src="/이미지/메인이미지3.jpg" alt=""></li>
-                    <li><img src="/이미지/메인이미지4.jpg" alt=""></li>
-                    <li><img src="/이미지/메인이미지5.jpg" alt=""></li>
-                    <li><img src="/이미지/메인이미지6.jpg" alt=""></li>
-                    <li><img src="/이미지/메인이미지7.jpg" alt=""></li>
+                    <li><img src="/img/메인이미지1.jpg" alt=""></li>
+                    <li><img src="/img/메인이미지2.jpg" alt=""></li>
+                    <li><img src="/img/메인이미지3.jpg" alt=""></li>
+                    <li><img src="/img/메인이미지4.jpg" alt=""></li>
+                    <li><img src="/img/메인이미지5.jpg" alt=""></li>
+                    <li><img src="/img/메인이미지6.jpg" alt=""></li>
+                    <li><img src="/img/메인이미지7.jpg" alt=""></li>
                 </ul>
             </div>
         </div>
         <article>
-           <img src="/%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%A1%B0%EA%B0%81/map.png" alt="" style="width : 595px; height : 375px; float : left; margin-top : 200px; position : absolute">
-           <div id="point"></div>
+            <ul class="button">
+                <li style="margin-left : 58px;">
+                    <img src="img/up.PNG" alt="">
+                </li>
+                <li style="margin-top : 110px; margin-left : 55px;">
+                    <img src="img/down.PNG" alt="">
+                </li>
+                <li style="margin-top : -50px; margin-left : 110px;">
+                    <img src="img/right.PNG" alt="">
+                </li>
+                <li style="margin-top : -50px;">
+                    <img src="img/left.PNG" alt="">
+                </li>
+            </ul>
+            <img src="/img/pixel/map.png" alt="" style="width : 595px; height : 375px; float : left; margin-top : 200px; position : absolute">
+            <div id="point"></div>
             <div class="slide_h">
                <ul>
                    <ul>
@@ -91,14 +93,16 @@
                                 <div id="gimpo">김포대교</div>
                                 <div id="hengju">행주대교</div> 
                                 <div id="banghwa">방화대교</div>
-                                <div id="gayang">가양대교</div>   
-                                <li><img src="/이미지/조각/Map_001.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_002.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_003.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_004.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_005.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_006.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_007.jpg" alt=""></li>
+                                <div id="gayang">가양대교</div> 
+                                <div id="guriamsa" style="text-align : right;">구리암사대교</div>
+                                <div id="misa">미사대교</div>
+                                <li><img src="/img/pixel/Map_001.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_002.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_003.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_004.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_005.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_006.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_007.jpg" alt=""></li>
                             </ul>
                         </li>            
                         <li>
@@ -108,24 +112,35 @@
                                 <div id="sugang">서강대교</div>
                                 <div id="mapo">마포대교</div>
                                 <div id="onehyo">원효대교</div>
-                                <li><img src="/이미지/조각/Map_008.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_009.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_010.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_011.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_012.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_013.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_014.jpg" alt=""></li>
+                                <div id="hangang_b">한강대교</div>
+                                <div id="dongjak">동작대교</div>
+                                <div id="banpo_jamsu">반포/잠수 대교</div>
+                                <div id="hanam">한남대교</div>
+                                <div id="dongho">동호대교</div>
+                                <div id="sungsu">성수대교</div>
+                                <div id="yungdong">영동대교</div>
+                                <div id="chyungdam">청담대교</div>
+                                <div id="jamsil">잠실대교</div>
+                                <div id="jamsil_i">잠실철교</div>
+                                <div id="olympic">올림픽대교</div>
+                                <li><img src="/img/pixel/Map_008.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_009.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_010.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_011.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_012.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_013.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_014.jpg" alt=""></li>
                             </ul>
                         </li>            
                         <li>
                             <ul class="bi">
-                                <li><img src="/이미지/조각/Map_015.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_016.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_017.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_018.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_019.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_020.jpg" alt=""></li>
-                                <li><img src="/이미지/조각/Map_021.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_015.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_016.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_017.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_018.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_019.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_020.jpg" alt=""></li>
+                                <li><img src="/img/pixel/Map_021.jpg" alt=""></li>
                             </ul>
                         </li>
                    </ul>
@@ -133,6 +148,10 @@
             </div>
         </article>
         <div id="ss_wrap">
+            <div class="ss_logo">SMART<br>SPACE</div>
+        </div>
+        <div id="ab_wrap">
+            <div class="ss_logo">SMART<br>SPACE</div>
         </div>
     </section>
 </body>

@@ -7,6 +7,7 @@ $(function(){
         $("#main_wrap").css("display","block");
         $("#b-img").css("opacity","0");
         $("#ss_wrap").css("display","none");
+        $("#ab_wrap").css("display","none");
     });
             
     $(".hangang").click(function(){
@@ -17,6 +18,7 @@ $(function(){
         $("article").css("display","inline-block");
         $("#b-img").css("opacity","0");
         $("#ss_wrap").css("display","none");
+        $("#ab_wrap").css("display","none");
     });
     
     $(".ss").click(function(){
@@ -26,6 +28,7 @@ $(function(){
         $("#main_wrap").css("display","none");
         $("#b-img").css("opacity","100");
         $("#ss_wrap").css("display","block");
+        $("#ab_wrap").css("display","none");
     });
     $(".au").click(function(){
         $("body").css("background","#BCBA9B");
@@ -35,6 +38,7 @@ $(function(){
         $("#main_wrap").css("display","none");
         $("#b-img").css("opacity","0");
         $("#ss_wrap").css("display","none");
+        $("#ab_wrap").css("display","block");
     });
 });
 var current_m = 0;
@@ -71,8 +75,8 @@ function prev(e){
     if(currentX < 0) currentX = 0;
     else{
         $("#point").animate({
-            left : "-=42.5px"
-        },200);
+            marginLeft : "-=42.5px"
+        },50);
     }
     
     animate_h(1);
@@ -82,8 +86,8 @@ function next(e){
     if(currentX > maxX-1) currentX = maxX-1;
     else{
         $("#point").animate({
-            left : "+=42.5px"
-        },200);
+            marginLeft : "+=42.5px"
+        },50);
     }
     animate_h(1);
 }    
@@ -92,8 +96,8 @@ function up(e){
     if(currentY < 0) currentY = 0;
     else{
         $("#point").animate({
-            top : "-=62.5px"
-        },200);
+            marginTop : "-=62.5px"
+        },50);
     }
     animate_h(2);
 }
@@ -102,8 +106,8 @@ function down(e){
     if(currentY > maxY-1) currentY = maxY-1;
     else{
         $("#point").animate({
-            top : "+=62.5px"
-        },200);
+            marginTop : "+=62.5px"
+        },50);
     }
     animate_h(2);
 }
