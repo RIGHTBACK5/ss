@@ -1,0 +1,21 @@
+ .hover1 {
+     width: 200px;	
+     height: 200px; 
+     text-align: center; 
+     line-height: 200px; 
+     border-radius: 50%; 
+     transition:all 1s; 
+     font-size: 1.5em; 
+     position:absolute;
+}
+.effect1:hover { 
+    box-shadow: 
+    inset 0px 0px 0 100px rgba(0,0,0,0.5); 
+    color: #fff;
+}
+.line{
+    width: 10px; 
+    height: 600px; 
+    background-color: 
+    black; position:absolute;
+}
