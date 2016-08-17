@@ -1,0 +1,9 @@
+*{margin : 0px; padding : 0px;}
+img{
+    display : block;
+    border : 0;
+}
+button{
+    border : 0px;
+    background: none;
+}

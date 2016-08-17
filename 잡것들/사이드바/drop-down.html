@@ -1,0 +1,113 @@
+<!doctype html>
+<html language="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ <style type="text/css">
+
+ *{margin:0;padding:0;}
+     
+ #sidemenu{
+     width:20px; 
+     height:800px; 
+     background-color:#ff99cc;
+     overflow : hidden;
+     transition : 0.5s;
+     }
+     
+ .submenu{
+         width:200px;
+         height:0px;
+         overflow:hidden;
+         background-color:#ff66ff;
+         transition : 0.5s
+     }
+     
+.menu{
+        width:200px;
+        height:50px;
+        list-style:none;
+        text-align:center;
+        line-height:50px;
+        display : inline-block;
+     }
+     
+.sub{
+        width:200px;
+        height:50px;
+		border : 1px solid;
+     }
+     
+.menu:hover{
+        background-color:#ff00cc;
+     }
+     
+.menu:hover .submenu{
+        width:200px;
+        height:250px;
+     }
+     
+.sub:hover{background-color:#ccffff;}
+    
+#sidemenu:hover{
+     width: 200px;
+}
+
+ </style>
+ 
+ <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+ <script type="text/javascript"></script>
+ 
+ </head>
+ 
+ <body background="/한강.png">
+  <div id="sidemenu">
+ <li class="menu">주메뉴1
+  <ul class="submenu">
+   <li class="sub">1</li>
+   <li class="sub">2</li>
+   <li class="sub">3</li>
+   <li class="sub">4</li>
+   <li class="sub">5</li>
+  </ul>
+ </li>
+ <li class="menu">주메뉴2
+  <ul class="submenu">
+   <li class="sub">1</li>
+   <li class="sub">2</li>
+   <li class="sub">3</li>
+   <li class="sub">4</li>
+   <li class="sub">5</li>
+  </ul>
+ </li>
+ <li class="menu">주메뉴3
+  <ul class="submenu">
+   <li class="sub">1</li>
+   <li class="sub">2</li>
+   <li class="sub">3</li>
+   <li class="sub">4</li>
+   <li class="sub">5</li>
+  </ul>
+ </li>
+   <li class="menu">주메뉴4
+  <ul class="submenu">
+   <li class="sub">1</li>
+   <li class="sub">2</li>
+   <li class="sub">3</li>
+   <li class="sub">4</li>
+   <li class="sub">5</li>
+  </ul>
+ </li>
+  
+   <li class="menu">주메뉴5
+  <ul class="submenu">
+   <li class="sub">1</li>
+   <li class="sub">2</li>
+   <li class="sub">3</li>
+   <li class="sub">4</li>
+   <li class="sub">5</li>
+  </ul>
+ </li>
+  </div>
+ </body>
+</html>

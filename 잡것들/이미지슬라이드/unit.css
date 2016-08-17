@@ -1,0 +1,28 @@
+.slide{
+    width : 1129px;
+    overflow : hidden;
+    margin : 0 auto;
+    position : relative;
+}
+.slide ul{
+    width : 7903px; 
+    list-style : none;
+    font-size : 0px;
+}
+.slide ul li{
+    display : inline-block;
+}
+.slide button.prev{
+    position : absolute;
+    left : 0;
+    top : 120px;
+}
+.slide button.next{
+    position : absolute;
+    right : 0px;
+    top : 120px;
+}
+.slide>ul>li>img{
+    width: 1129px;
+    height: 750px;
+}

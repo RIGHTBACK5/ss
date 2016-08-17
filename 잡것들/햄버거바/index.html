@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        header {
+          background-color: #426bde;
+        }
+
+        .burger-input {
+          top: 0;
+          left: 0;
+          opacity: 0;
+          width: 400px;
+          height: 45px;
+          position: absolute;
+        }
+        .burger-input + label {
+          width: 30px;
+          display: block;
+          margin: 0 auto;
+          cursor : pointer;
+          padding: 10px 0;
+          position: relative;
+        }
+        .burger-input + label:after, .burger-input + label:before,
+        .burger-input + label .burger {
+          content: '';
+          width: 25px;
+          height: 4px;
+          display: block;
+          margin: 3px auto;
+          border-radius: 3px;
+          background-color: #ffffff;
+          -webkit-transition: all 200ms ease-in-out;
+          -moz-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out;
+        }
+        .burger-input:checked + label {
+          top: 4px;
+        }
+        .burger-input:checked + label:before {
+          -webkit-transform: translateY(2px) rotate(135deg);
+          -moz-transform: translateY(2px) rotate(135deg);
+          -ms-transform: translateY(2px) rotate(135deg);
+          -o-transform: translateY(2px) rotate(135deg);
+          transform: translateY(2px) rotate(135deg);
+        }
+        .burger-input:checked + label:after {
+          -webkit-transform: translateY(-12px) rotate(-135deg);
+          -o-transform: translateY(-12px) rotate(-135deg);
+          transform: translateY(-12px) rotate(-135deg);
+        }
+        .burger-input:checked + label .burger {
+          -webkit-transform: scale(0);
+        }
+        .burger-input:checked ~ nav {
+          display: block;
+        }
+        .burger-input:checked ~ nav li {
+          display: block;
+          text-align: center;
+        }
+
+        nav {
+          display: none;
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          list-style: none;
+          text-align: center;
+        }
+        ul a {
+          display: block;
+          padding: 10px 0;
+          color: #ffffff;
+          background-color: #6281d8;
+          -webkit-transition: background-color 250ms ease-in-out;
+          transition: background-color 250ms ease-in-out;
+        }
+        ul a:hover {
+          background-color: #7691dd;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        body {
+          background-color: #1D1F20;
+        }
+
+        *, :before, :after {
+          box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <input type="checkbox" id="click" class="burger-input"/>
+      <label for="click">
+          <div class="burger"></div>
+      </label>
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact us</a></li>
+          </ul>
+      </nav>
+</header>
+</body>
+</html>
