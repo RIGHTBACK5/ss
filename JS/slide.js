@@ -1,19 +1,18 @@
 $(function(){
     $(".home").click(function(){
         $("body").css("background","#5F5F5F");
-        $("section").css("height","750px");
         $("section").css("width","1600px");
-        $("article").css("display","none");
+        $("section").css("height","750px");
         $("#main_wrap").css("display","block");
+        $("article").css("display","none");
         $("#b-img").css("opacity","0");
         $("#ss_wrap").css("display","none");
         $("#ab_wrap").css("display","none");
     });
-            
     $(".hangang").click(function(){
         $("body").css("background","#8DD4E4");
-        $("section").css("height","1600px");
         $("section").css("width","1800px");
+        $("section").css("height","750px");
         $("#main_wrap").css("display","none");
         $("article").css("display","inline-block");
         $("#b-img").css("opacity","0");
@@ -22,8 +21,8 @@ $(function(){
     });
     
     $(".ss").click(function(){
-        $("section").css("height","750px");
         $("section").css("width","1500px");
+        $("section").css("height","750px");
         $("article").css("display","none");
         $("#main_wrap").css("display","none");
         $("#b-img").css("opacity","100");
@@ -32,10 +31,10 @@ $(function(){
     });
     $(".au").click(function(){
         $("body").css("background","#BCBA9B");
-        $("section").css("height","750px");
         $("section").css("width","1500px");
-        $("article").css("display","none");
+        $("section").css("height","750px");
         $("#main_wrap").css("display","none");
+        $("article").css("display","none");
         $("#b-img").css("opacity","0");
         $("#ss_wrap").css("display","none");
         $("#ab_wrap").css("display","block");
@@ -49,26 +48,32 @@ var maxX = 13;
 var maxY = 5;
 var container_m;
 var container_h;
-var s = $("#sBox_wrap > li");
+var sb;
 
 function init(){
     container_m = $(".slide_m>ul");
     container_h = $(".slide_h>ul");
+    sb = $("#sBox_wrap > li");
 
     max_m = container_m.children().length;
-
     events();
+    button();
     setInterval(next_m, 5000);
 }
 function events(){
     $(window).on("keydown",keydown);
 }
-
+function button(){
+    $(".upb").on("click",up);
+    $(".downb").on("click",down);
+    $(".rightb").on("click",next);
+    $(".leftb").on("click",prev);
+}
 function next_m(e){
     current_m++;
     if(current_m > max_m-1) current_m = 0;
     animate_m();
-} 
+}
 
 function prev(e){
     currentX--;
@@ -131,7 +136,7 @@ function animate_m(){
     var moveX = current_m * 1129;
     TweenMax.to(container_m, 0, {marginLeft : -moveX, ease:Expo.easeOut});
     $("#sBox_wrap >li").removeClass("np");
-    $(s[current_m]).addClass("np");
+    $(sb[current_m]).addClass("np");
 }
 function animate_h(s){
     var moveX = currentX * 600;

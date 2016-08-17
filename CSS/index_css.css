@@ -56,31 +56,13 @@ section{
     color : #281277;
     
     transition : 2s;
+    z-index : 999;
 }
 #main_section{
     width: 471px;
     height: 750px;
     display : inline-block;
     float : left;
-}
-#sBox_wrap{
-    float : right;
-    margin-top : 90px;
-    
-    list-style : none;
-}
-.sBox{
-    width: 25px;
-    height: 25px;
-    background-color: #BCBCBC;
-    
-    margin : 20px;
-    margin-top : 50px;
-    
-    cursor : pointer;
-}
-.np{
-    background-color: #505050;
 }
 article{
     width: 100%;
