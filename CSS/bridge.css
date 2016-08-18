@@ -13,7 +13,7 @@
     z-index: 999;
     transition : 0.5s;
     
-    color : black;
+    color : gray;
     font-size : 20px;
     text-align : center;
     line-height : 100px;
@@ -22,6 +22,14 @@
 .bi div:hover{
     background-color: #FD9494;
 }
+.bi span{
+    display : inline-block;
+    width : 100px;
+    height: 30px;
+    line-height  : 30px;
+    background-color: floralwhite;
+    word-break: break-all;
+}
 /*https://www.google.com/maps/d/viewer?mid=1PLAZ4RLNT1NMUgY_owwQ11wy2mI&hl=en_US 다리 출처*/
 #gimpo{
     height: 200px;
@@ -29,35 +37,63 @@
     left : 660px;
     transform: rotate(54deg);
 }
+#gimpo span{
+    transform: rotate(-54deg);
+    margin-left : -35px;
+}
 #hengju{
     top : 430px;
     left : 960px;
     transform: rotate(54deg);
+}
+#hengju span{
+    transform: rotate(-54deg);
+    margin-left : -35px;
 }
 #banghwa{
     top : 530px;
     left : 1250px;
     transform: rotate(54deg);
 }
+#banghwa span{
+    transform: rotate(-54deg);
+    margin-left : -35px;
+}
 #gayang{
     top : 720px;
     left : 1830px;
     transform: rotate(49deg);
+}
+#gayang span{
+    transform: rotate(-49deg);
+    margin-left : -35px;
 }
 #sungsan{
     top : 150px;
     left : 2360px;
     transform: rotate(42deg);
 }
+#sungsan span{
+    transform: rotate(-42deg);
+    margin-left : -35px;
+}
 #yanghwa{
     top : 240px;
     left : 2580px;
     transform: rotate(60deg);
 }
+#yanghwa span{
+    transform: rotate(-60deg);
+    margin-left : -35px;
+}
 #sugang{
     top : 290px;
     left: 2960px;
     transform: rotate(48deg);
+}
+#sugang span{
+    transform: rotate(-48deg);
+    margin-left : -35px;
 }
 #mapo{
     height: 240px;
@@ -65,11 +101,19 @@
     left : 3140px;
     transform: rotate(69deg);
 }
+#mapo span{
+    transform: rotate(-69deg);
+    margin-left : -35px;
+}
 #onehyo{
     height: 240px;
     top : 380px;
     left : 3280px;
     transform: rotate(72deg);
+}
+#onehyo span{
+    transform: rotate(-72deg);
+    margin-left : -35px;
 }
 #hangang_b{
     height: 100px;
@@ -77,11 +121,19 @@
     left : 3530px;
     transform: rotate(48deg);
 }
+#hangang_b span{
+    transform: rotate(-48deg);
+    margin-left : -35px;
+}
 #dongjak{
     height: 100px;
     top : 610px;
     left : 3920px;
     transform: rotate(20deg);
+}
+#dongjak span{
+    transform: rotate(-20deg);
+    margin-left : -35px;
 }
 #banpo_jamsu{
     height: 100px;
@@ -89,11 +141,20 @@
     left : 4180px;
     transform: rotate(-36deg);
 }
+#banpo_jamsu span{
+    width: 150px;
+    transform: rotate(36deg);
+    margin-left : -35px;
+}
 #hanam{
     height: 100px;
     top : 440px;
     left : 4460px;
     transform: rotate(-56deg);
+}
+#hanam span{
+    transform: rotate(56deg);
+    margin-left : -35px;
 }
 #dongho{
     height: 100px;
@@ -101,37 +162,98 @@
     left : 4600px;
     transform: rotate(-50deg);
 }
+#dongho span{
+    transform: rotate(50deg);
+    margin-left : -35px;
+}
 #sungsu{
     height: 80px;
     top : 340px;
     left : 4840px;
     transform: rotate(15deg);
 }
+#sungsu span{
+    transform: rotate(-15deg);
+    margin-left : -35px;
+}
 #yungdong{
+    height: 100px;
     top : 410px;
-    left : 5180px;
+    left : 5220px;
+    transform: rotate(42deg);
+}
+#yungdong span{
+    transform: rotate(-42deg);
+    margin-left : -35px;
 }
 #chyungdam{
+    height: 120px;
     top : 450px;
-    left : 5310px;
+    left : 5340px;
+    transform: rotate(35deg);
+}
+#chyungdam span{
+    transform: rotate(-35deg);
+    margin-left : -35px;
 }
 #jamsil{
-    top : 460px;
-    left : 5780px;
+    height: 160px;
+    top : 430px;
+    left : 5810px;
+    transform: rotate(-49deg);
+}
+#jamsil span{
+    transform: rotate(49deg);
+    margin-left : -35px;
 }
 #jamsil_i{
-    top : 380px;
-    left : 5990px;
+    height: 180px;
+    top : 320px;
+    left : 6020px;
+    transform: rotate(-60deg);
+}
+#jamsil_i span{
+    transform: rotate(60deg);
+    margin-left : -35px;
 }
 #olympic{
-    top : 280px;
+    top : 230px;
     left : 6130px;
+    transform: rotate(-76deg);
+}
+#olympic span{
+    transform: rotate(76deg);
+    margin-left : -35px;
 }
 #guriamsa{
+    height: 180px;
     top : 650px;
-    left : 6940px;
+    left : 7040px;
+    transform: rotate(-50deg);
+}
+#guriamsa span{
+    width: 130px;
+    transform: rotate(50deg);
+    margin-left : -35px;
 }
 #misa{
-    top : 590px;
+    top : 560px;
     left : 7600px;
+    transform: rotate(69.5deg);
+}
+#misa span{
+    transform: rotate(-69.5deg);
+    margin-left : -35px;
+}
+#digitech{
+    width: 200px;
+    height: 100px;
+    background-color: #FFFFFF;
+    
+    top : 220px;
+    left : 4050px;
+}
+#digitech img{
+    width: 200px;
+    height: 100px;
 }

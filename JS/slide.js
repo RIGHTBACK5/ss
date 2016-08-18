@@ -41,8 +41,8 @@ $(function(){
     });
 });
 var current_m = 0;
-var currentX = 0;
-var currentY = 0;
+var currentX = 6;
+var currentY = 2;
 var max_m = 0;
 var maxX = 13;
 var maxY = 5;
@@ -60,6 +60,8 @@ function init(){
     button();
     sbs();
     slider = setInterval(next_m, 5000);
+    animate_h(1);
+    animate_h(2);
 }
 function events(){
     $(window).on("keydown",keydown);
