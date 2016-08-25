@@ -1,0 +1,148 @@
+body {
+	margin: 0 auto;
+	padding:0;
+}
+header{
+    margin: 0 auto;
+    padding:0;
+    width:940px;
+}
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+h4 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#au{
+    width:750px;
+    float:right;
+}
+.wrap {
+    padding:50px;
+	width:1500px;
+	margin : 0 auto;
+    border : 1px solid black;
+}
+#j{
+	width: 450px;
+	height:750px;
+	position: relative;
+	overflow: hidden;
+}
+
+#j h1{
+	margin: 0;
+	text-align: center;
+	color: #000;
+	padding-top: 100px;
+}
+#j > img {
+	position: absolute;
+	left:0px;
+	top:-750px;
+}
+#j > img:first-child {
+	left: 0;
+}
+.btn-box{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height:750px;
+
+}
+.btn-box > div{
+	position: absolute;
+	width: 50px;
+	height:50px;
+	line-height:50px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.5);
+	font-size:50px;
+	color:#888;
+	cursor: pointer;
+
+}
+.btn-box > div:hover{
+	color: red;
+}
+.btn-down{
+	left:125px;
+	bottom :5px;
+}
+
+.pointer-box {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	width: 50%;
+	height: 30px;
+	color: #000;
+	text-align : right;
+	font-size: 30px;
+}
+.pointer-box .active{
+color:red;
+
+}
+#mb{
+    position:relative;
+    float:right;
+    top:-125px;
+    left:50px;
+        
+}
+#pm{
+    width:1150px;
+    height:750px;
+    float:right;
+}
+#jh{
+    width:200px;
+    margin-left:50px;
+    margin-top:50px;
+    
+}
+#wb{
+    width:230px;
+    margin-left:870px;
+    margin-top:-85px;
+}
+#bh{
+    width:200px;
+    margin-left:325px;
+    margin-top:-385px;
+}
+#us{
+    width:200px;
+    margin-top:-672px;
+    margin-left:600px;
+}
